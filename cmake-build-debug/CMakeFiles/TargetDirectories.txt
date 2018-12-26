@@ -1,0 +1,17 @@
+/home/sun/github/redis-4.0.12/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/CMakeFiles/redis-cli.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/CMakeFiles/redis-server.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/CMakeFiles/rebuild_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/CMakeFiles/edit_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/CMakeFiles/rebuild_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/CMakeFiles/edit_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/CMakeFiles/hiredis.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/CMakeFiles/edit_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/CMakeFiles/rebuild_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/CMakeFiles/linenoise.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/CMakeFiles/rebuild_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/CMakeFiles/edit_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/CMakeFiles/edit_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/CMakeFiles/rebuild_cache.dir
+/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/CMakeFiles/lua.dir

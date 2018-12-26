@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="redis-4.0.12"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\deps\;CMake Files\deps\hiredis\;CMake Files\deps\linenoise\;CMake Files\deps\lua\;CMake Files\deps\lua\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redis-cli">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/redis-cli" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/hiredis"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/linenoise"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/jemalloc"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/lua/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 redis-cli"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redis-cli/fast">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/redis-cli" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/hiredis"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/linenoise"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/jemalloc"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/lua/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 redis-cli/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redis-server">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/redis-server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/hiredis"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/linenoise"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/jemalloc"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/lua/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 redis-server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="redis-server/fast">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/redis-server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/hiredis"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/linenoise"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/jemalloc"/>
+					<Add directory="/home/sun/github/redis-4.0.12/deps/lua/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 redis-server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hiredis">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/libhiredis.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/Makefile&quot;  VERBOSE=1 hiredis"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hiredis/fast">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/libhiredis.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/Makefile&quot;  VERBOSE=1 hiredis/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/hiredis/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linenoise">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/liblinenoise.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/Makefile&quot;  VERBOSE=1 linenoise"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linenoise/fast">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/liblinenoise.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/Makefile&quot;  VERBOSE=1 linenoise/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/linenoise/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lua">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/liblua.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/Makefile&quot;  VERBOSE=1 lua"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lua/fast">
+				<Option output="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/liblua.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../include/c++/8.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/Makefile&quot;  VERBOSE=1 lua/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sun/github/redis-4.0.12/cmake-build-debug/deps/lua/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/async.c">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/async.h">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/dict.c">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/dict.h">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/hiredis.c">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/hiredis.h">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/net.c">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/net.h">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/read.c">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/read.h">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/sds.c">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/sds.h">
+			<Option target="hiredis"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/linenoise/linenoise.c">
+			<Option target="linenoise"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/linenoise/linenoise.h">
+			<Option target="linenoise"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/fpconv.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/fpconv.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lapi.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lapi.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lauxlib.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lauxlib.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lbaselib.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lcode.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lcode.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ldblib.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ldebug.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ldebug.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ldo.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ldo.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ldump.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lfunc.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lfunc.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lgc.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lgc.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/linit.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/liolib.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/llex.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/llex.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lmathlib.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lmem.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lmem.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/loadlib.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lobject.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lobject.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lopcodes.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lopcodes.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/loslib.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lparser.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lparser.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lstate.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lstate.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lstring.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lstring.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lstrlib.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ltable.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ltable.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ltablib.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ltm.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/ltm.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lua_bit.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lua_cjson.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lua_cmsgpack.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lua_struct.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lundump.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lundump.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lvm.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lvm.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lzio.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/lzio.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/strbuf.c">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/strbuf.h">
+			<Option target="lua"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/adlist.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/adlist.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/ae.c">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/ae.h">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/anet.c">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/anet.h">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/aof.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/bio.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/bio.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/bitops.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/blocked.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/childinfo.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/cluster.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/cluster.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/config.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/config.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/crc16.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/crc64.c">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/crc64.h">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/db.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/debug.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/defrag.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/dict.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/dict.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/endianconv.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/endianconv.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/evict.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/expire.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/fmacros.h">
+			<Option target="redis-cli"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/geo.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/geo.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/geohash.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/geohash.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/geohash_helper.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/geohash_helper.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/help.h">
+			<Option target="redis-cli"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/hyperloglog.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/intset.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/intset.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/latency.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/latency.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/lazyfree.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/lzfP.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/lzf_c.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/lzf_d.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/memtest.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/module.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/multi.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/networking.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/notify.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/object.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/pqsort.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/pqsort.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/pubsub.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/quicklist.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/quicklist.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/rand.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/rand.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/rax.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/rax.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/rdb.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/rdb.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/redis-check-aof.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/redis-check-rdb.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/redis-cli.c">
+			<Option target="redis-cli"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/redismodule.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/release.c">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/release.h">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/replication.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/rio.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/rio.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/scripting.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/sds.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/sds.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/sdsalloc.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/sentinel.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/server.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/server.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/setproctitle.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/sha1.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/sha1.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/siphash.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/slowlog.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/slowlog.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/solarisfixes.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/sort.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/sparkline.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/sparkline.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/syncio.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/t_hash.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/t_list.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/t_set.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/t_string.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/t_zset.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/util.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/util.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/version.h">
+			<Option target="redis-cli"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/ziplist.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/ziplist.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/zipmap.c">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/zipmap.h">
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/zmalloc.c">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/src/zmalloc.h">
+			<Option target="redis-cli"/>
+			<Option target="redis-server"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/hiredis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\hiredis\"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/linenoise/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\linenoise\"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\lua\"/>
+		</Unit>
+		<Unit filename="/home/sun/github/redis-4.0.12/deps/lua/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\lua\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
