@@ -61,10 +61,12 @@
 #include "server.h"
 #include "bio.h"
 
+//该版本redis BIO_NUM_OPS=3
 static pthread_t bio_threads[BIO_NUM_OPS];
 static pthread_mutex_t bio_mutex[BIO_NUM_OPS];
 static pthread_cond_t bio_newjob_cond[BIO_NUM_OPS];
 static pthread_cond_t bio_step_cond[BIO_NUM_OPS];
+//任务队列
 static list *bio_jobs[BIO_NUM_OPS];
 /* The following array is used to hold the number of pending jobs for every
  * OP type. This allows us to export the bioPendingJobsOfType() API that is
@@ -104,6 +106,7 @@ void bioInit(void) {
         pthread_mutex_init(&bio_mutex[j],NULL);
         pthread_cond_init(&bio_newjob_cond[j],NULL);
         pthread_cond_init(&bio_step_cond[j],NULL);
+        //任务队列,通过redis的list来实现
         bio_jobs[j] = listCreate();
         bio_pending[j] = 0;
     }
@@ -120,6 +123,8 @@ void bioInit(void) {
      * responsible of. */
     for (j = 0; j < BIO_NUM_OPS; j++) {
         void *arg = (void*)(unsigned long) j;
+        //创建后台线程
+        //这里的函数参数是arg = j，也就是每个线程传入一个编号j，0代表关闭文件，1代表aof初始化
         if (pthread_create(&thread,&attr,bioProcessBackgroundJobs,arg) != 0) {
             serverLog(LL_WARNING,"Fatal: Can't initialize Background Jobs.");
             exit(1);
@@ -128,6 +133,7 @@ void bioInit(void) {
     }
 }
 
+//创建bio任务，并将任务插入到任务队列(链表)的尾部
 void bioCreateBackgroundJob(int type, void *arg1, void *arg2, void *arg3) {
     struct bio_job *job = zmalloc(sizeof(*job));
 
@@ -135,13 +141,18 @@ void bioCreateBackgroundJob(int type, void *arg1, void *arg2, void *arg3) {
     job->arg1 = arg1;
     job->arg2 = arg2;
     job->arg3 = arg3;
+    //对队列的操作需要先加锁
     pthread_mutex_lock(&bio_mutex[type]);
     listAddNodeTail(bio_jobs[type],job);
     bio_pending[type]++;
+    //通知相应类型任务执行线程,有新的任务加入到队列中,可以继续执行了
     pthread_cond_signal(&bio_newjob_cond[type]);
+    //解锁
     pthread_mutex_unlock(&bio_mutex[type]);
 }
 
+//bio后台任务执行的主体函数,从任务队列中取出任务并执行
+//参数arg表示的具体哪种类型的任务
 void *bioProcessBackgroundJobs(void *arg) {
     struct bio_job *job;
     unsigned long type = (unsigned long) arg;
@@ -159,6 +170,7 @@ void *bioProcessBackgroundJobs(void *arg) {
     pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
     pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 
+    //对队列的操作需要加锁
     pthread_mutex_lock(&bio_mutex[type]);
     /* Block SIGALRM so we are sure that only the main thread will
      * receive the watchdog signal. */
@@ -173,6 +185,8 @@ void *bioProcessBackgroundJobs(void *arg) {
 
         /* The loop always starts with the lock hold. */
         if (listLength(bio_jobs[type]) == 0) {
+            //如果队列为空,则等待, 等待是通过bio_newjob_cond[type](信号量)来实现
+            //pthread_cond_wait不仅仅是一次wait signal，而是Unlock -> Wait -> Lock
             pthread_cond_wait(&bio_newjob_cond[type],&bio_mutex[type]);
             continue;
         }
@@ -185,6 +199,8 @@ void *bioProcessBackgroundJobs(void *arg) {
 
         /* Process the job accordingly to its type. */
         if (type == BIO_CLOSE_FILE) {
+            //arg1是一个文件描述符，所以，在任务加入队列的时候，只是需要放一个文件描述符如队列，
+            //这也就是为什么bio_job结构体会设置得如此简单
             close((long)job->arg1);
         } else if (type == BIO_AOF_FSYNC) {
             aof_fsync((long)job->arg1);
@@ -205,6 +221,7 @@ void *bioProcessBackgroundJobs(void *arg) {
         zfree(job);
 
         /* Unblock threads blocked on bioWaitStepOfType() if any. */
+        //通知阻塞的线程继续执行
         pthread_cond_broadcast(&bio_step_cond[type]);
 
         /* Lock again before reiterating the loop, if there are no longer
